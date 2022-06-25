@@ -61,20 +61,20 @@ def digit_classifier(image):
     # READ CLASSIFIERS
     classifier_digit_a = Net()
     #classifier_digit_a.load_state_dict(torch.load('/home/gundabad/workspace/src/phase3_general/src/phase_3_display_classification/classifiers/classifier_digits_a.pth'))
-    classifier_digit_a.load_state_dict(torch.load('/Users/Castro/Desktop/DesafioPetrobras/scripts_code/digits_display/classifiers/classifier_digits_a.pth'))
+    classifier_digit_a.load_state_dict(torch.load('/content/df/digits_display/classifiers/classifier_digits_a.pth'))
     classifier_digit_a.eval()
 
     classifier_digit_b = Net()
-    classifier_digit_b.load_state_dict(torch.load('/Users/Castro/Desktop/DesafioPetrobras/scripts_code/digits_display/classifiers/classifier_digits_b.pth'))
+    classifier_digit_b.load_state_dict(torch.load('/content/df/digits_display/classifiers/classifier_digits_b.pth'))
     classifier_digit_b.eval()
 
 
     classifier_digit_sign = Net()
-    classifier_digit_sign.load_state_dict(torch.load('/Users/Castro/Desktop/DesafioPetrobras/scripts_code/digits_display/classifier_digits_sign.pth'))
+    classifier_digit_sign.load_state_dict(torch.load('/content/df/digits_display/classifiers/classifier_digits_sign.pth'))
     classifier_digit_sign.eval()
 
     classifier_digit_d = Net()
-    classifier_digit_d.load_state_dict(torch.load('/Users/Castro/Desktop/DesafioPetrobras/scripts_code/digits_display/classifier_digits_d.pth'))
+    classifier_digit_d.load_state_dict(torch.load('/content/df/digits_display/classifiers/classifier_digits_d.pth'))
     classifier_digit_d.eval()
 
 
@@ -143,7 +143,7 @@ def mnist_classifier(final_image):
 
     #From AK Script
     # template_1.png is the largest
-    template_file = '/Users/Castro/Desktop/DesafioPetrobras/scripts_code/digits_display/templates/template_1.png'
+    template_file = '/content/df/digits_display/templates/template_1.png'
     #template_file = './phase_3_display_classification/rotate_display/template_1.png' #template_1.png is the largest
     #template_file = './rotate_display/template_1.png' #template_1.png is the largest
     #template_file = '/home/gundabad/workspace/src/phase3_general/src/phase_3_display_classification/rotate_display/template_1.png' #template_1.png is the largest
